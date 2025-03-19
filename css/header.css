@@ -1,0 +1,57 @@
+header {
+    background-image: url("../img/bg_hero_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-color: rgba(0,0,0,.4); */
+    background-color: #777;
+    background-blend-mode: multiply;
+}
+
+header h1, header h2, header p {
+    color: var(--txt-color-2);
+}
+
+.box {
+    display: flex;
+    justify-content: center;    /* Align for main axis */
+    align-items: center;        /* Align for cross axis */
+    gap: 32px;
+}
+
+.hor {                          /* Додатковий клас модифікації вирівнювання */
+    flex-direction: row;        /* Main axis row */
+}
+
+.ver {                          /* Додатковий клас модифікації вирівнювання */
+    flex-direction: column;     /* Main axis column */
+}
+
+/* Temporary for development */
+
+/* End of Temporary for development */
+
+.col.c1 {
+    flex-basis: 50%;
+}
+
+.col.c2 {
+    flex-basis: 50%;
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (max-width:560px) {
+    .hor {
+        gap:0;
+        flex-wrap: wrap;
+    }
+
+    .col.c1,
+    .col.c2,
+    .col.c3 {
+        flex-basis: 100%;
+    }
+}
