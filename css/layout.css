@@ -53,7 +53,7 @@
 .container {
     padding-left: var(--mob-padding);
     padding-right: var(--mob-padding);
-    min-height: 10dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
+    min-height: 50dvh;  /* УВАГА!!! Мінімальна висота секцій 50% висоти в'юпорта */
 }
 
 .container > .inside {  /* Direct child .inside in .container */
